@@ -1,4 +1,17 @@
-include blocks/head
-	block content
-	
-	include blocks/footer
+extends blocks/layout.jade
+
+block head
+	- var pageTitle = 'Главная';
+
+block content
+	include blocks/side-menu
+	.right-side
+		include blocks/top-menu
+		.main__home#pagepiling
+			.section
+				p(style="font-size: 64px;") Пиздец
+			.section
+				p(style="font-size: 64px;") Пиздец
+			.section
+			.section
+			.section

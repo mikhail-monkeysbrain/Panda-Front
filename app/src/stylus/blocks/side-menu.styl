@@ -1,0 +1,80 @@
+.side-menu
+  max-width 404px
+  width 100%
+  // position fixed
+  position absolute
+  top 0
+  left 0
+  min-height calc(100vh - 60px)
+  background-color: #fefff8;
+  padding-top 20px
+  padding-bottom 40px
+  box-shadow -5px 0px 20px 5px #bbb
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-direction column
+
+.side-menu__logo
+  display block
+  text-decoration none
+  text-align center
+  margin-bottom 16px
+  img
+    max-width 316px
+    width 100%
+
+.side-menu__nav
+  li
+    &:first-child
+      a
+        border-top: 1px solid #d2d2d3;
+    a
+      display block
+      color: $text-grey;
+      font-family $opsan
+      font-size: 26px;
+      padding-top 15px
+      padding-bottom 15px
+      padding-left 40px
+      padding-right 30px
+      font-weight: 400;
+      text-decoration none
+      letter-spacing: 1.52px;
+      border-bottom: 1px solid #d2d2d3;
+      img
+        float right
+
+.side-menu__contacts
+  margin-top auto
+
+.side-menu__tel
+  text-align center
+  margin-bottom 32px
+  a
+    display block
+    text-decoration none
+    color: $text-grey;
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.52px;
+.side-menu__mail
+  text-align center
+  margin-bottom 32px
+  a
+    color: $text-grey;
+    text-decoration none
+    font-size: 26px;
+    font-weight: 400;
+    letter-spacing: 1.52px;
+
+.side-menu__social
+  text-align center
+  a
+    display inline-block
+    vertical-align middle
+    margin 0 4px
+    text-decoration none
+  .ico
+    height 25px
+    max-width 32px

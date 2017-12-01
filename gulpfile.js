@@ -12,7 +12,8 @@ var env         = require('minimist')(process.argv.slice(2)),
     prefixer    = require('autoprefixer-stylus'),
     imagemin    = require('gulp-imagemin'),
     cache       = require('gulp-cache'),
-    rsync       = require('rsyncwrapper');
+    rsync       = require('rsyncwrapper'),
+    rupture     = require('rupture');
 
 // Компиляция Jade
 gulp.task('jade', function () {
@@ -28,7 +29,7 @@ gulp.task('stylus', function(){
     return gulp.src('app/src/stylus/**/*.styl')
         .pipe(stylus({
           'include css': true,
-          use:[prefixer('last 10 versions')]
+          use:[rupture(), prefixer('last 10 versions')]
     }))
         .pipe(gulp.dest('app/dist/css/'))
 });

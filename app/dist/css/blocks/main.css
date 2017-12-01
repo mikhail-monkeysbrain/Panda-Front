@@ -1,0 +1,15 @@
+* {
+  font-family: $opsan;
+}
+ul {
+  list-style: none;
+}
+.right-side {
+  padding-left: 404px;
+}
+.right-side .pp-section {
+  width: -webkit-calc(100% - 404px);
+  width: calc(100% - 404px);
+  height: -webkit-calc(100% - 115px);
+  height: calc(100% - 115px);
+}
