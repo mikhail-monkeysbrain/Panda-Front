@@ -8,10 +8,27 @@ block content
 	.right-side
 		include blocks/top-menu
 		.main__home#pagepiling
-			.section
-				p(style="font-size: 64px;") Пиздец
-			.section
-				p(style="font-size: 64px;") Пиздец
-			.section
-			.section
-			.section
+			.section(style="background-image:url(img/bg1.jpg);")
+				.pageDown
+					.bg(style="background-image:url(img/bg2.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/bg2.jpg);")
+				.pageDown
+					.bg(style="background-image:url(img/bg3.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/bg3.jpg);")
+				.pageDown
+					.bg(style="background-image:url(img/bg4.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/bg4.jpg);")
+				.pageDown
+					.bg(style="background-image:url(img/bg5.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/bg5.jpg);")
+				.pageDown
+					.bg(style="background-image:url(img/bg6.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/bg6.jpg);")
+				.pageUp
+					.bg(style="background-image:url(img/bg1.jpg);")
+					img(src="img/down.png", alt="")
