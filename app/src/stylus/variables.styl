@@ -1,9 +1,11 @@
 //colors
 $text-grey = #393939
+$cv-orange = #f38f2e
 
 //varaibles
 animation = .5s ease all
 $opsan = 'Open Sans', sans-serif
+
 
 //MIXINs
 media(maxWidth)
@@ -13,3 +15,11 @@ media(maxWidth)
 min-media(minWidth)
 	@media screen and (min-width: minWidth)
 		{block}
+
+pxvw($px)
+	font-size ($px)px
+	font-size ($px / (1920 * 0.01))vw
+
+maxvw($px)
+	max-width ($px)px
+	max-width ($px / (1920 * 0.01))vw

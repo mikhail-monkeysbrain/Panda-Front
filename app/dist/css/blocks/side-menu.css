@@ -5,8 +5,7 @@
   top: 0;
   left: 0;
   z-index: 51;
-  min-height: -webkit-calc(100vh - 60px);
-  min-height: calc(100vh - 60px);
+  min-height: 100vh;
   background-color: #fefff8;
   padding-top: 20px;
   padding-bottom: 40px;
