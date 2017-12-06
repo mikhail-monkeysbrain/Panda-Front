@@ -107,6 +107,7 @@
 
 
 .home-adv
+.home-about
   padding 0 4.14vw
 
 .main-title
@@ -128,7 +129,6 @@
 
 .home-adv__item
   flex-basis 45%
-  padding-right 13%
   margin-top 4vw
   .title
     padding-bottom 24px
@@ -150,13 +150,196 @@
     .num
       width 95px
     .text
+      width calc(100% - 100px)
       color: #080808;
       font-size: 17px;
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 6.1px;
   .info
+    max-width 370px
     color: #080808;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3.6px;
+
+
+.home-about__content
+  padding-top 3vw
+  margin-top 3vw
+  position relative
+  max-width 813px
+  width 100%
+  text-align justify
+  &:before
+    content ''
+    position absolute
+    top 0
+    left 0
+    max-width 155px
+    width 100%
+    height 5px
+    background $cv-orange
+  p
+    margin-top 1.25vw
+    color: #080808;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 3.3px;
+    &:first-child
+      margin-top 0
+
+.homesec4
+  .pp-tableCell
+    align-self flex-start
+    padding-top 3vw
+
+.home-catalog
+  padding-left 4.14vw
+  padding-right 6.5vw
+
+.home-catalog__list
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+
+.home-catalog__item
+  flex-basis 23%
+  height 13.8vw
+  margin-top 2vw
+  text-decoration none
+  background-color rgba(255, 255, 255, 0.5);
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-wrap wrap
+  align-content center
+  align-items center
+  transition: .3s
+  transform-origin: center;
+  &:hover
+    transform: scale(1.25);
+    background-color rgba(255, 255, 255, 0.85);
+    .arrow
+      transform: scale(1);
+      margin-top 1vw
+      height auto
+    +.bg
+      opacity 1
+  .title
+    width 90%
+    margin: 0 auto;
+    color: #080808;
+    pxvw(32)
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.52px;
+    text-align center
+  .arrow
+    max-width 80%
+    display block
+    margin: 0 auto;
+    transition: .3s
+    height 0
+    transform: scale(0);
+  +.bg
+    position absolute
+    left 0
+    top 0
+    width 100%
+    height 100%
+    background-size cover
+    background-repeat no-repeat
+    transition: .4s
+    z-index -1
+    opacity 0
+
+
+.home-sertificates__title
+.home-news__title
+  padding-left 4.14vw
+  margin-bottom 4vw
+  .sofa-carousel__next
+    margin-top 32px
+.home-sertificates
+.home-news
+  .owl-stage
+    transition: .3s !important;
+    left 0
+  .owl-item
+    opacity 0.5
+    &.active
+      opacity 1
+    &:nth-child(2n-1)
+      .slide
+        align-items flex-start
+    &:nth-child(2n)
+      .slide
+        align-items flex-end
+  .slide
+    display -webkit-flex
+    display -ms-flex
+    display flex
+    min-height 400px
+    >div
+      display -webkit-flex
+      display -ms-flex
+      display flex
+    .date
+      flex-basis 100%
+      color: #080808;
+      font-size: 22px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 6.1px;
+    .num
+      padding-right 24px
+      margin-right 24px
+      position relative
+      &:after
+        content ''
+        position absolute
+        top 0
+        right 0
+        width 5px
+        height 36px
+        background $cv-orange
+      img
+        height 40px
+        width auto
+    .info
+      .title
+        color: #080808;
+        font-size: 23px;
+        font-weight: 800;
+        text-transform: uppercase;
+        letter-spacing: 6.1px;
+      .link
+        display inline-block
+        margin-top 24px
+        color: #080808;
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 6.1px;
+
+.home-news
+  .slide
+    >div
+      flex-direction column
+    .date
+      margin-bottom 18px
+    .info
+      padding-left 24px
+      position relative
+      &:before
+        content ''
+        position absolute
+        top 0
+        left 0
+        width 5px
+        height 36px
+        background $cv-orange
