@@ -4,6 +4,9 @@
     background-repeat no-repeat
     background-color #e0dfdc
     background-position bottom
+    &.homesec1
+      +below(1200px)
+        background-size auto 200%
   .pageDown
   .pageUp
     position absolute
@@ -15,6 +18,9 @@
     text-align center
     transition: .5s;
     cursor pointer
+    +below(1500px)
+      width 125px
+      height 125px
     &:hover
       .bg
         opacity 1
@@ -27,20 +33,23 @@
       border-radius: 50%;
       background-repeat no-repeat
       background-size cover
-      z-index 1
+      z-index 5
       opacity 0
       transition: .5s;
     img
       position relative
-      z-index 2
+      z-index 6
       padding-top 40px
+      +below(1500px)
+        padding-top 25px
   .pageUp
     transform: rotate(180deg);
     .bg
       transform: rotate(180deg);
 
+
 .sofa-carousel
-  .slide
+  .slide-owl
     position relative
 
 
@@ -130,10 +139,15 @@
 .home-adv__item
   flex-basis 45%
   margin-top 4vw
+  +below(1500px)
+    margin-top 2vw
   .title
     padding-bottom 24px
     margin-bottom 24px
     position relative
+    +below(1500px)
+      padding-bottom 12px
+      margin-bottom 12px
     &:after
       content ''
       position absolute
@@ -149,6 +163,10 @@
       vertical-align middle
     .num
       width 95px
+      +below(1500px)
+        width 55px
+        img
+          height 35px
     .text
       width calc(100% - 100px)
       color: #080808;
@@ -156,12 +174,18 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 6.1px;
+      +below(1500px)
+        font-size 16px
+        letter-spacing 3px
   .info
     max-width 370px
     color: #080808;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3.6px;
+    +below(1500px)
+      font-size 16px
+      letter-spacing 1.5px
 
 
 .home-about__content
@@ -171,6 +195,9 @@
   max-width 813px
   width 100%
   text-align justify
+  +below(1500px)
+    padding-top 1.5vw
+    margin-top 1.5vw
   &:before
     content ''
     position absolute
@@ -186,6 +213,9 @@
     font-size: 18px;
     font-weight: 400;
     letter-spacing: 3.3px;
+    +below(1500px)
+      font-size 16px
+      letter-spacing 1.5px
     &:first-child
       margin-top 0
 
@@ -263,6 +293,8 @@
   margin-bottom 4vw
   .sofa-carousel__next
     margin-top 32px
+    +below(1500px)
+      margin-top 24px
 .home-sertificates
 .home-news
   .owl-stage
@@ -273,16 +305,16 @@
     &.active
       opacity 1
     &:nth-child(2n-1)
-      .slide
+      .slide-owl
         align-items flex-start
     &:nth-child(2n)
-      .slide
+      .slide-owl
         align-items flex-end
-  .slide
+  .slide-owl
     display -webkit-flex
     display -ms-flex
     display flex
-    min-height 400px
+    min-height 20.8vw
     >div
       display -webkit-flex
       display -ms-flex
@@ -327,7 +359,7 @@
         letter-spacing: 6.1px;
 
 .home-news
-  .slide
+  .slide-owl
     >div
       flex-direction column
     .date

@@ -7,6 +7,65 @@ ul
 
 .right-side
   padding-left 404px
+  +below(1500px)
+    padding-left 280px
+  +below(1200px)
+    padding-left 0
   .pp-section
+  .fp-section
     width calc(100% - 404px)
     height calc(100% - 115px)
+    +below(1500px)
+      width calc(100% - 280px)
+      height calc(100% - 84px)
+    +below(1200px)
+      width 100%
+    +below(767px)
+      height 100%
+
+.hamburger
+  display none
+  position fixed
+  top 20px
+  right 20px
+  width 44px
+  height 43px
+  padding 5px
+  z-index 52
+  background: rgba(255, 255, 255, 0.25);
+  cursor pointer
+  border: 2px solid $cv-orange
+  border-radius: 5px
+  &.is-active
+    span:nth-child(1)
+      opacity 0
+      transform: scale(0);
+    span:nth-child(2)
+      transform: rotate(45deg);
+      margin-top: 13px
+    span:nth-child(3)
+      transform: rotate(-45deg);
+      margin-top: 13px
+  span:nth-child(1)
+    position absolute
+    background $cv-orange
+    width 30px
+    height 4px
+    margin-top 12px
+    transition: .35s;
+  span:nth-child(2)
+    position absolute
+    background $cv-orange
+    width 30px
+    height 4px
+    margin-top 0px
+    transition: .35s;
+  span:nth-child(3)
+    position absolute
+    background $cv-orange
+    width 30px
+    height 4px
+    margin-top 24px
+    transition: .35s;
+  +below(767px)
+    display block

@@ -27,7 +27,7 @@ html, body {
 }
 #pp-nav {
   position: fixed;
-  z-index: 100;
+  z-index: 45;
   margin-top: -32px;
   top: 40%;
   opacity: 1;

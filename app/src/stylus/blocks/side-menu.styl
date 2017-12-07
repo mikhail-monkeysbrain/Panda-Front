@@ -15,6 +15,17 @@
   display -ms-flex
   display flex
   flex-direction column
+  +below(1500px)
+    max-width 280px
+    padding-bottom 20px
+  +below(1200px)
+    left -280px
+    transition: .5s;
+    &.opened
+      left 0
+      .side-menu__open
+        span
+          transform rotateY(180deg)
 
 .side-menu__logo
   display block
@@ -24,6 +35,8 @@
   img
     max-width 316px
     width 100%
+    +below(1500px)
+      max-width 180px
 
 .side-menu__nav
   li
@@ -43,8 +56,16 @@
       text-decoration none
       letter-spacing: 1.52px;
       border-bottom: 1px solid #d2d2d3;
+      +below(1500px)
+        font-size 18px
+        padding-top 8px
+        padding-bottom 8px
+        padding-left 20px
+        padding-right 15px
       img
         float right
+        +below(1500px)
+          height 24px
 
 .side-menu__contacts
   margin-top auto
@@ -52,6 +73,8 @@
 .side-menu__tel
   text-align center
   margin-bottom 32px
+  +below(1500px)
+    margin-bottom 24px
   a
     display block
     text-decoration none
@@ -59,15 +82,21 @@
     font-size: 26px;
     font-weight: 400;
     letter-spacing: 1.52px;
+    +below(1500px)
+      font-size 18px
 .side-menu__mail
   text-align center
   margin-bottom 32px
+  +below(1500px)
+    margin-bottom 24px
   a
     color: $text-grey;
     text-decoration none
     font-size: 26px;
     font-weight: 400;
     letter-spacing: 1.52px;
+    +below(1500px)
+      font-size 18px
 
 .side-menu__social
   text-align center
@@ -79,3 +108,21 @@
   .ico
     height 25px
     max-width 32px
+
+.side-menu__open
+  position absolute
+  left 100%
+  top 50%
+  transform translateY(-50%)
+  background-color #fff
+  border 1px solid #d2d2d3
+  border-left 0
+  padding 8px
+  line-height 12px
+  cursor pointer
+  display none
+  span
+    display inline-block
+    transition: .5s;
+  +below(1200px)
+    display block

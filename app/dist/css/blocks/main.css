@@ -8,9 +8,105 @@ ul {
 .right-side {
   padding-left: 404px;
 }
-.right-side .pp-section {
+@media only screen and (max-width: 1500px) {
+  .right-side {
+    padding-left: 280px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .right-side {
+    padding-left: 0;
+  }
+}
+.right-side .pp-section,
+.right-side .fp-section {
   width: -webkit-calc(100% - 404px);
   width: calc(100% - 404px);
   height: -webkit-calc(100% - 115px);
   height: calc(100% - 115px);
+}
+@media only screen and (max-width: 1500px) {
+  .right-side .pp-section,
+  .right-side .fp-section {
+    width: -webkit-calc(100% - 280px);
+    width: calc(100% - 280px);
+    height: -webkit-calc(100% - 84px);
+    height: calc(100% - 84px);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .right-side .pp-section,
+  .right-side .fp-section {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .right-side .pp-section,
+  .right-side .fp-section {
+    height: 100%;
+  }
+}
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 44px;
+  height: 43px;
+  padding: 5px;
+  z-index: 52;
+  background: rgba(255,255,255,0.25);
+  cursor: pointer;
+  border: 2px solid $cv-orange;
+  border-radius: 5px;
+}
+.hamburger.is-active span:nth-child(1) {
+  opacity: 0;
+  -webkit-transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
+}
+.hamburger.is-active span:nth-child(2) {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-top: 13px;
+}
+.hamburger.is-active span:nth-child(3) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  margin-top: 13px;
+}
+.hamburger span:nth-child(1) {
+  position: absolute;
+  background: $cv-orange;
+  width: 30px;
+  height: 4px;
+  margin-top: 12px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.hamburger span:nth-child(2) {
+  position: absolute;
+  background: $cv-orange;
+  width: 30px;
+  height: 4px;
+  margin-top: 0px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+.hamburger span:nth-child(3) {
+  position: absolute;
+  background: $cv-orange;
+  width: 30px;
+  height: 4px;
+  margin-top: 24px;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+@media only screen and (max-width: 767px) {
+  .hamburger {
+    display: block;
+  }
 }
