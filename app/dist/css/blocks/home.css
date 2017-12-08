@@ -29,6 +29,14 @@
     height: 125px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .main__home .pageDown,
+  .main__home .pageUp {
+    width: 75px;
+    height: 75px;
+    right: 25px;
+  }
+}
 .main__home .pageDown:hover .bg,
 .main__home .pageUp:hover .bg {
   opacity: 1;
@@ -60,6 +68,13 @@
     padding-top: 25px;
   }
 }
+@media only screen and (max-width: 900px) {
+  .main__home .pageDown img,
+  .main__home .pageUp img {
+    padding-top: 12px;
+    height: 65px;
+  }
+}
 .main__home .pageUp {
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
@@ -83,15 +98,31 @@
   margin: 0 auto;
   padding: 25px 0;
 }
+@media only screen and (max-width: 767px) {
+  .sofa-carousel__img-block .img-area {
+    padding: 10px 0;
+  }
+}
 .sofa-carousel__img-block .img-area .owl-item {
   padding-left: -webkit-calc(5vw + 50px);
   padding-left: calc(5vw + 50px);
+}
+@media only screen and (max-width: 800px) {
+  .sofa-carousel__img-block .img-area .owl-item {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 .sofa-carousel__img-block .img-area .info {
   display: none;
 }
 .sofa-carousel__img-block .img-area img {
   width: 100%;
+}
+@media only screen and (max-width: 800px) {
+  .sofa-carousel__img-block .img-area img {
+    max-width: 100%;
+  }
 }
 .sofa-carousel__img-block .angleBot {
   position: absolute;
@@ -101,6 +132,11 @@
   height: 60px;
   border-left: 4px solid $cv-orange;
   border-bottom: 4px solid $cv-orange;
+}
+@media only screen and (max-width: 800px) {
+  .sofa-carousel__img-block .angleBot {
+    display: none;
+  }
 }
 .sofa-carousel__img-block .angleUp {
   position: absolute;
@@ -112,6 +148,11 @@
   border-top: 4px solid $cv-orange;
   border-right: 4px solid $cv-orange;
 }
+@media only screen and (max-width: 800px) {
+  .sofa-carousel__img-block .angleUp {
+    display: none;
+  }
+}
 .sofa-carousel__title-block {
   padding-left: 5vw;
 }
@@ -120,10 +161,20 @@
   font-weight: 400;
   letter-spacing: 1.52px;
 }
+@media only screen and (max-width: 767px) {
+  .sofa-carousel__type {
+    font-size: 28px;
+  }
+}
 .sofa-carousel__name {
   color: #080808;
   font-weight: 700;
   letter-spacing: 6.1px;
+}
+@media only screen and (max-width: 767px) {
+  .sofa-carousel__name {
+    font-size: 28px;
+  }
 }
 .sofa-carousel__name sup {
   position: relative;
@@ -132,25 +183,28 @@
   font-style: italic;
   letter-spacing: 1.52px;
 }
+@media only screen and (max-width: 767px) {
+  .sofa-carousel__name sup {
+    font-size: 16px;
+  }
+}
 .sofa-carousel__next {
   max-width: 288px;
   max-width: 13vw;
   width: 100%;
   cursor: pointer;
 }
+@media only screen and (max-width: 767px) {
+  .sofa-carousel__next {
+    max-width: 220px;
+  }
+  .sofa-carousel__next img {
+    width: 100%;
+  }
+}
 .home-adv,
 .home-about {
   padding: 0 4.14vw;
-}
-.main-title {
-  color: #080808;
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.52px;
-}
-.main-title.bold {
-  font-weight: bold;
-  letter-spacing: 6.1px;
 }
 .home-adv__list {
   display: -webkit-flex;
@@ -166,6 +220,11 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+@media only screen and (max-width: 767px) {
+  .home-adv__list {
+    margin-top: 12px;
+  }
+}
 .home-adv__item {
   -webkit-flex-basis: 45%;
       -ms-flex-preferred-size: 45%;
@@ -175,6 +234,13 @@
 @media only screen and (max-width: 1500px) {
   .home-adv__item {
     margin-top: 2vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-adv__item {
+    -webkit-flex-basis: 100%;
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
   }
 }
 .home-adv__item .title {
@@ -256,6 +322,11 @@
     margin-top: 1.5vw;
   }
 }
+@media only screen and (max-width: 767px) {
+  .home-about__content {
+    margin-top: 12px;
+  }
+}
 .home-about__content:before {
   content: '';
   position: absolute;
@@ -265,6 +336,11 @@
   width: 100%;
   height: 5px;
   background: $cv-orange;
+}
+@media only screen and (max-width: 767px) {
+  .home-about__content:before {
+    display: none;
+  }
 }
 .home-about__content p {
   margin-top: 1.25vw;
@@ -335,6 +411,14 @@
       -ms-transform-origin: center;
           transform-origin: center;
 }
+@media only screen and (max-width: 767px) {
+  .home-catalog__item {
+    -webkit-flex-basis: 48%;
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+    height: 19vh;
+  }
+}
 .home-catalog__item:hover {
   -webkit-transform: scale(1.25);
       -ms-transform: scale(1.25);
@@ -359,6 +443,11 @@
   text-transform: uppercase;
   letter-spacing: 1.52px;
   text-align: center;
+}
+@media only screen and (max-width: 767px) {
+  .home-catalog__item .title {
+    font-size: 14px;
+  }
 }
 .home-catalog__item .arrow {
   max-width: 80%;
@@ -397,6 +486,16 @@
   .home-sertificates__title .sofa-carousel__next,
   .home-news__title .sofa-carousel__next {
     margin-top: 24px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .home-sertificates__title .sofa-carousel__next,
+  .home-news__title .sofa-carousel__next {
+    max-width: 220px;
+  }
+  .home-sertificates__title .sofa-carousel__next img,
+  .home-news__title .sofa-carousel__next img {
+    width: 100%;
   }
 }
 .home-sertificates .owl-stage,
@@ -455,6 +554,12 @@
   text-transform: uppercase;
   letter-spacing: 6.1px;
 }
+@media only screen and (max-width: 767px) {
+  .home-sertificates .slide-owl .date,
+  .home-news .slide-owl .date {
+    font-size: 18px;
+  }
+}
 .home-sertificates .slide-owl .num,
 .home-news .slide-owl .num {
   padding-right: 24px;
@@ -484,6 +589,12 @@
   text-transform: uppercase;
   letter-spacing: 6.1px;
 }
+@media only screen and (max-width: 767px) {
+  .home-sertificates .slide-owl .info .title,
+  .home-news .slide-owl .info .title {
+    font-size: 18px;
+  }
+}
 .home-sertificates .slide-owl .info .link,
 .home-news .slide-owl .info .link {
   display: inline-block;
@@ -494,6 +605,12 @@
   text-decoration: underline;
   text-transform: uppercase;
   letter-spacing: 6.1px;
+}
+@media only screen and (max-width: 767px) {
+  .home-sertificates .slide-owl .info .link,
+  .home-news .slide-owl .info .link {
+    font-size: 15px;
+  }
 }
 .home-news .slide-owl >div {
   -webkit-box-orient: vertical;
@@ -517,4 +634,8 @@
   width: 5px;
   height: 36px;
   background: $cv-orange;
+}
+.pp-ns {
+  overflow-y: scroll;
+  height: 75vh;
 }

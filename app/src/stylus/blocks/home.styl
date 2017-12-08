@@ -21,6 +21,10 @@
     +below(1500px)
       width 125px
       height 125px
+    +below(900px)
+      width 75px
+      height 75px
+      right 25px
     &:hover
       .bg
         opacity 1
@@ -42,6 +46,9 @@
       padding-top 40px
       +below(1500px)
         padding-top 25px
+      +below(900px)
+        padding-top 12px
+        height 65px
   .pageUp
     transform: rotate(180deg);
     .bg
@@ -61,13 +68,20 @@
     position relative
     margin: 0 auto;
     padding 25px 0
+    +below(767px)
+      padding 10px 0
     .owl-item
       padding-left calc(5vw + 50px)
+      +below(800px)
+        padding-left 25px
+        padding-right 25px
     .info
       display none
     img
       maxvw(917)
       width 100%
+      +below(800px)
+        max-width 100%
   .angleBot
     position absolute
     bottom 0
@@ -76,6 +90,8 @@
     height 60px
     border-left 4px solid $cv-orange
     border-bottom 4px solid $cv-orange
+    +below(800px)
+      display none
   .angleUp
     position absolute
     top 0
@@ -85,6 +101,8 @@
     height 60px
     border-top 4px solid $cv-orange
     border-right 4px solid $cv-orange
+    +below(800px)
+      display none
 
 .sofa-carousel__title-block
   padding-left 5vw
@@ -94,11 +112,15 @@
   pxvw(102)
   font-weight: 400;
   letter-spacing: 1.52px;
+  +below(767px)
+    font-size 28px
 .sofa-carousel__name
   color: #080808;
   pxvw(102)
   font-weight: 700;
   letter-spacing: 6.1px;
+  +below(767px)
+    font-size 28px
   sup
     position relative
     top -3.5vw
@@ -106,11 +128,17 @@
     pxvw(59)
     font-style: italic;
     letter-spacing: 1.52px;
+    +below(767px)
+      font-size 16px
 .sofa-carousel__next
   max-width 288px
   max-width 13vw
   width 100%
   cursor pointer
+  +below(767px)
+    max-width 220px
+    img
+      width 100%
 
 
 
@@ -119,28 +147,22 @@
 .home-about
   padding 0 4.14vw
 
-.main-title
-  color: #080808;
-  pxvw(49)
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 1.52px;
-  &.bold
-    font-weight bold
-    letter-spacing: 6.1px;
-
 .home-adv__list
   display -webkit-flex
   display -ms-flex
   display flex
   flex-wrap wrap
   justify-content space-between
+  +below(767px)
+    margin-top 12px
 
 .home-adv__item
   flex-basis 45%
   margin-top 4vw
   +below(1500px)
     margin-top 2vw
+  +below(767px)
+    flex-basis 100%
   .title
     padding-bottom 24px
     margin-bottom 24px
@@ -198,6 +220,8 @@
   +below(1500px)
     padding-top 1.5vw
     margin-top 1.5vw
+  +below(767px)
+    margin-top 12px
   &:before
     content ''
     position absolute
@@ -207,6 +231,8 @@
     width 100%
     height 5px
     background $cv-orange
+    +below(767px)
+      display none
   p
     margin-top 1.25vw
     color: #080808;
@@ -249,6 +275,9 @@
   align-items center
   transition: .3s
   transform-origin: center;
+  +below(767px)
+    flex-basis 48%
+    height 19vh
   &:hover
     transform: scale(1.25);
     background-color rgba(255, 255, 255, 0.85);
@@ -267,6 +296,8 @@
     text-transform: uppercase;
     letter-spacing: 1.52px;
     text-align center
+    +below(767px)
+      font-size 14px
   .arrow
     max-width 80%
     display block
@@ -295,6 +326,10 @@
     margin-top 32px
     +below(1500px)
       margin-top 24px
+    +below(767px)
+      max-width 220px
+      img
+        width 100%
 .home-sertificates
 .home-news
   .owl-stage
@@ -326,6 +361,8 @@
       font-weight: 700;
       text-transform: uppercase;
       letter-spacing: 6.1px;
+      +below(767px)
+        font-size 18px
     .num
       padding-right 24px
       margin-right 24px
@@ -348,6 +385,8 @@
         font-weight: 800;
         text-transform: uppercase;
         letter-spacing: 6.1px;
+        +below(767px)
+          font-size 18px
       .link
         display inline-block
         margin-top 24px
@@ -357,6 +396,8 @@
         text-decoration: underline;
         text-transform: uppercase;
         letter-spacing: 6.1px;
+        +below(767px)
+          font-size 15px
 
 .home-news
   .slide-owl
@@ -375,3 +416,7 @@
         width 5px
         height 36px
         background $cv-orange
+
+.pp-ns
+  overflow-y: scroll;
+  height 75vh

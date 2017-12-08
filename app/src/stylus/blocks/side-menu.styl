@@ -8,8 +8,6 @@
   z-index 51
   min-height 100vh
   background-color: #fefff8;
-  padding-top 20px
-  padding-bottom 40px
   box-shadow -5px 0px 20px 5px #bbb
   display -webkit-flex
   display -ms-flex
@@ -17,7 +15,6 @@
   flex-direction column
   +below(1500px)
     max-width 280px
-    padding-bottom 20px
   +below(1200px)
     left -280px
     transition: .5s;
@@ -26,6 +23,16 @@
       .side-menu__open
         span
           transform rotateY(180deg)
+
+.side-menu__wrap
+  padding-top 20px
+  padding-bottom 40px
+  +below(1500px)
+    padding-bottom 20px
+  +below(767px)
+    overflow-y auto
+    height 100vh
+
 
 .side-menu__logo
   display block
@@ -114,7 +121,7 @@
   left 100%
   top 50%
   transform translateY(-50%)
-  background-color #fff
+  background-color rgba(255, 255, 255, 0.5);
   border 1px solid #d2d2d3
   border-left 0
   padding 8px

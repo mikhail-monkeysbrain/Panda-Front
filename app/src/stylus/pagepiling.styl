@@ -29,13 +29,7 @@ html, body {
     transition-timing-function: cubic-bezier(0.550, 0.085, 0.000, 0.990);
     /* custom */
 }
-#pp-nav {
-    position: fixed;
-    z-index: 45;
-    margin-top: -32px;
-    top: 40%;
-    opacity: 1;
-}
+
 #pp-nav.right {
     right: 17px;
 }
@@ -102,33 +96,3 @@ html, body {
     height: 100%;
 }
 }
-
-.pp-section.pp-table
-    display -webkit-flex
-    display -ms-flex
-    display flex
-    align-items center
-
-.pp-tableCell
-    vertical-align: middle;
-    width: 100%;
-
-
-#pp-nav span
-.pp-slidesNav span
-    top: 2px;
-    left: 2px;
-    width: 15px;
-    height: 5px;
-    background-color: #000;
-    border: 1px solid #000;
-    transform-origin: right;
-    position: absolute;
-    transition: .5s;
-    z-index: 1;
-
-
-#pp-nav li .active span
-.pp-slidesNav .active span
-    background: #000;
-    transform: scaleX(3.5);
