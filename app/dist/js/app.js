@@ -129,6 +129,23 @@ $(document).ready(function () {
       $('.news-carousel .owl-stage').css('left', '0');
     });
   });
+
+  $('.about-info-carousel').owlCarousel({
+    items:1,
+    stagePadding:0,
+    center:0,
+    margin:0,
+    autoplay:0,
+    mouseDrag:0,
+    touchDrag:0,
+    loop:1,
+  });
+
+  // Переключение слайда по стрелке
+  $('.about-slider .sofa-carousel__next').click(function () {
+    $('.about-info-carousel').trigger('next.owl.carousel');
+  });
+  
   // Carousel end
 
   //
@@ -140,5 +157,12 @@ $(document).ready(function () {
 		$(this).toggleClass('is-active');
 		$('.top-menu').toggleClass('show');
 	})
+
+  // Фикс на ссанину
+  var isIE11 = !!navigator.userAgent.match(/Trident.*rv\:11\./);
+  if (isIE11) {
+    $('.home-sertificates .slide-owl, .home-news .slide-owl').css('height', '20.8vw');
+    console.log('Ваш браузер - моча)');
+  }
 
 });

@@ -1,0 +1,57 @@
+include blocks/top-menu
+
+extends blocks/layout.jade
+
+block head
+	- var pageTitle = 'Каталог';
+
+block content
+	include blocks/side-menu
+	.right-side
+		+top-menu
+		.hamburger
+					span
+					span
+					span
+		.catalog-page.scroll-block(style="background-image:url(img/cbg1.jpg);")
+			.home-catalog
+				.main-title.bold каталог
+				p.catalog-text-info1 мебель по индивидуальным параметрам,
+					br
+					| оперативная доставка и гарантия 18 месяцев.
+				p.catalog-text-info2 С нами вопрос покупки новой мебели
+					br
+					| решается просто и удобно!
+				.home-catalog__list
+					a(href="#").home-catalog__item
+						.title угловые диваны
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg1.jpg);")
+					a(href="#").home-catalog__item
+						.title прямые диваны
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg2.jpg);")
+					a(href="#").home-catalog__item
+						.title мини <br> диваны
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg3.jpg);")
+					a(href="#").home-catalog__item
+						.title кухонные зоны
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg5.jpg);")
+					a(href="#").home-catalog__item
+						.title кресла
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg1.jpg);")
+					a(href="#").home-catalog__item
+						.title мягкие кровати
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg2.jpg);")
+					a(href="#").home-catalog__item
+						.title аксессуары
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg3.jpg);")
+					a(href="#").home-catalog__item
+						.title акции
+						img(src="img/next.png", alt="img").arrow
+					.bg(style="background-image:url(img/bg5.jpg);")

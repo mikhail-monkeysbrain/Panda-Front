@@ -61,6 +61,9 @@
 .top-menu__nav li {
   text-align: center;
 }
+.top-menu__nav li.is-active a {
+  font-weight: bold;
+}
 .top-menu__nav a {
   display: block;
   color: $text-grey;

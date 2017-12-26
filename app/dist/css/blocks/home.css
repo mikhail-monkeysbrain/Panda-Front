@@ -542,6 +542,7 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 .home-sertificates .slide-owl .date,
 .home-news .slide-owl .date {
@@ -638,4 +639,5 @@
 .pp-ns {
   overflow-y: scroll;
   height: 75vh;
+  margin-top: 0 !important;
 }

@@ -1,0 +1,35 @@
+include blocks/top-menu
+
+extends blocks/layout.jade
+
+block head
+	- var pageTitle = 'О КОМПАНИИ';
+
+block content
+	include blocks/side-menu
+	.right-side
+		+top-menu({tab:2})
+		.hamburger
+					span
+					span
+					span
+		.main__home#pagepiling
+			.section(style="background-image:url(img/abg1.jpg);")
+				.about-1
+					p Делаем жизнь
+					p МЯГЧЕ!
+				.pageDown
+					.bg(style="background-image:url(img/abg2.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/abg2.jpg);")
+				include elements/about-2
+			.section(style="background-image:url(img/abg3.jpg);")
+				.about-2
+					p Комфорт и роскошь
+					p доступные каждому
+				a(href="/catalog.html").about-catalog__button
+					p перейти в <br> каталог
+					img(src="img/next.png", alt="img")
+				.pageUp
+					.bg(style="background-image:url(img/abg1.jpg);")
+					img(src="img/down.png", alt="img")

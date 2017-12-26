@@ -1,0 +1,43 @@
+include blocks/top-menu
+
+extends blocks/layout.jade
+
+block head
+	- var pageTitle = 'Партнерам';
+
+block content
+	include blocks/side-menu
+	.right-side
+		+top-menu({tab:3})
+		.hamburger
+					span
+					span
+					span
+		.main__home#pagepiling
+			.section(style="background-image:url(img/pbg1.jpg);")
+				.part-1
+					p станьте
+					p успешными партнерами
+					p прямо сейчас!
+				.pageDown
+					.bg(style="background-image:url(img/pbg2.jpg);")
+					img(src="img/down.png", alt="")
+			.section(style="background-image:url(img/pbg2.jpg);")
+				include elements/part-2
+			.section(style="background-image:url(img/pbg3.jpg);")
+				.part-2
+					p оставьте заявку на рассмотрение
+					p и регистрацию в личном кабинете
+				form(action="").partners-form.js-ns
+					.partners-form__flex
+						input(type="text" placeholder="Компания").input-text
+						input(type="text" placeholder="ИНН").input-text
+						input(type="email" placeholder="E-MAIL").input-text
+						input(type="text" placeholder="Имя контактного лица").input-text
+						input(type="text" placeholder="Тел. контактного лица").input-text
+						label(for="").input-file-label
+							span Прикрепить копию <br> регистрации
+							img(src="img/skrepa.png", alt="img")
+							input(type="file").input-file
+					.partners-form__flex-right
+						input(type="submit" value="отправить").input-submit

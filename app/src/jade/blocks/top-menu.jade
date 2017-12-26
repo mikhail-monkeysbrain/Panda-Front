@@ -1,17 +1,19 @@
-nav.top-menu
-  ul.top-menu__nav
-    li
-      a(href="#") ГЛАВНАЯ
-    li
-      a(href="#") О КОМПАНИИ
-    li
-      a(href="#") ПАРТНЕРАМ
-    li
-      a(href="#") ГДЕ КУПИТЬ
-    li
-      a(href="#") ГДЕ КУПИТЬ
-    li
-      a(href="#").lk Войти <br> в личный <br> кабинет
-    li
-      a(href="#")
-        img(src="img/cart.png", alt="img", width="42").ico
+mixin top-menu(data)
+  -var data = data || {}
+  nav.top-menu
+    ul.top-menu__nav
+      li(class= data.tab == 1 ? 'is-active' : '')
+        a(href="/") ГЛАВНАЯ
+      li(class= data.tab == 2 ? 'is-active' : '')
+        a(href="/about.html") О КОМПАНИИ
+      li(class= data.tab == 3 ? 'is-active' : '')
+        a(href="/partners.html") ПАРТНЕРАМ
+      li(class= data.tab == 4 ? 'is-active' : '')
+        a(href="#") ГДЕ КУПИТЬ
+      li(class= data.tab == 5 ? 'is-active' : '')
+        a(href="#") КОНТАКТЫ
+      li
+        a(href="#").lk Войти <br> в личный <br> кабинет
+      li
+        a(href="#")
+          img(src="img/cart.png", alt="img", width="42").ico

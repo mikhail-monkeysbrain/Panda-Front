@@ -1,0 +1,242 @@
+.about-1
+  max-width 890px
+  width 100%
+  margin: 0 auto;
+  p
+    &:first-child
+      text-align left
+      color: #080808;
+      font-size: 90px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.52px;
+      +below(900px)
+        font-size 45px
+        text-align center
+    &:last-child
+      text-align right
+      color: #080808;
+      font-size: 90px;
+      font-weight: 700;
+      letter-spacing: 6.1px;
+      +below(900px)
+        font-size 45px
+        text-align center
+
+.about-2
+  max-width 1200px
+  width 100%
+  margin: 0 auto;
+  p
+    &:first-child
+      text-align left
+      color: #080808;
+      font-size: 70px;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.52px;
+      +below(1300px)
+        font-size 35px
+        text-align center
+    &:last-child
+      text-align right
+      color: #080808;
+      text-transform uppercase
+      font-size: 70px;
+      font-weight: 700;
+      letter-spacing: 6.1px;
+      +below(1300px)
+        font-size 35px
+        text-align center
+
+.about-info-carousel
+  padding-left: 4.14vw;
+  .owl-item.active
+    +.owl-item
+      position relative
+      left -15vw
+      +below(1024px)
+        position static
+  .info-slide
+  p
+    max-width 800px
+    width 100%
+    color: #080808;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    +below(1024px)
+      font-size 14px
+
+.about-catalog__button
+  text-align center
+  margin-top 4vw
+  text-decoration none
+  display block
+  p
+    display inline-block
+    vertical-align middle
+    color: #080808;
+    font-size: 26px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1.52px;
+  img
+    display inline-block
+    vertical-align middle
+    margin-left 12px
+    max-width 290px
+    width 100%
+
+.catalog-page
+  background-size: cover;
+  background-repeat: no-repeat;
+  position relative
+  z-index 3
+  .main-title
+    margin-bottom 4vw
+  .home-catalog
+    position relative
+    padding-top: 4.14vw;
+    padding-bottom 2vw
+  .home-catalog__list
+    margin-top 2vw
+
+.catalog-text-info1
+.catalog-text-info2
+  color: #080808;
+  pxvw(39)
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.52px;
+  +below(767px)
+    font-size 16px
+.catalog-text-info2
+  font-weight: 700;
+
+.part-1
+  max-width 85%
+  width 100%
+  margin: 0 auto;
+  p
+    &:nth-child(1)
+    &:nth-child(2)
+    &:nth-child(3)
+      color: #080808;
+      pxvw(64)
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.52px;
+      +below(767px)
+        font-size 32px
+        text-align center !important
+    &:nth-child(1)
+      text-align left
+    &:nth-child(2)
+      text-align center
+    &:nth-child(3)
+      text-align right
+      font-weight bold
+
+.part-2
+  p
+    &:nth-child(1)
+    &:nth-child(2)
+      color: #080808;
+      pxvw(49)
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: 1.52px;
+      text-align center
+      +below(767px)
+        font-size 24px
+    &:nth-child(2)
+      font-weight: 700;
+
+.partners-form__flex
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content space-between
+  flex-wrap wrap
+  +below(550px)
+    justify-content center
+  > *
+    flex-basis 32%
+    margin-bottom 12px
+    +below(800px)
+      flex-basis 48%
+    +below(550px)
+      flex-basis 98%
+.partners-form__flex-right
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  justify-content flex-end
+  +below(550px)
+    justify-content center
+  > *
+    flex-basis 32%
+    margin-bottom 12px
+    +below(800px)
+      flex-basis 48%
+    +below(550px)
+      flex-basis 98%
+.partners-form
+  max-width 1200px
+  width 100%
+  margin: 0 auto;
+  margin-top 4vw
+  .input-text
+    background: transparent;
+    border: 2px solid #2e2e2c;
+    color #2e2e2c
+    padding 24px
+    font-size: 24px;
+    +below(1400px)
+      padding 12px
+      font-size 18px
+  ::-webkit-input-placeholder
+    color #2e2e2c
+  :-ms-input-placeholder
+    color #2e2e2c
+  ::-moz-placeholder
+    color #2e2e2c
+  :-moz-placeholder
+    color #2e2e2c
+  .input-file-label
+    position relative
+    padding-left 24px
+    padding-top 8px
+    span
+      display inline-block
+      vertical-align middle
+      color: #080808;
+      font-size: 24px;
+      letter-spacing: 1.52px;
+      +below(1400px)
+        font-size 18px
+    img
+      vertical-align middle
+      height 51px
+      margin-left 4px
+    .input-file
+      position absolute
+      width 100%
+      height 100%
+      opacity 0
+      top 0
+      left 0
+  .input-submit
+    color: #fefff8;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding 24px
+    background #000
+    border: none;
+    cursor pointer
+    +below(1400px)
+      padding 12px
+      font-size 18px
