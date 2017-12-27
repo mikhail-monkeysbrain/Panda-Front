@@ -1,0 +1,35 @@
+include blocks/top-menu
+
+extends blocks/layout.jade
+
+block head
+	- var pageTitle = 'ОТЗЫВЫ';
+
+block content
+	include blocks/side-menu
+	.right-side
+		+top-menu({tab:4})
+		.hamburger
+					span
+					span
+					span
+		.reviews-page.scroll-block(style="background-image:url(img/rbg1.jpg);")
+			.reviews-block
+				.main-title.bold ОТЗЫВЫ
+				.sofa-carousel__next
+					img(src="img/next.png", alt="img")
+				.reviews-block__carousel.owl-carousel
+					.review-slide
+						.photo
+							img(src="img/photo.jpg", alt="img")
+						.info
+							p.date 27.10.2017
+							p.name Lorem
+							p.text.huge-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla debitis repellendus, aliquam mollitia tempore, dicta porro modi maiores unde corrupti sequi vitae tenetur facere officiis quaerat atque quibusdam dolores asperiores omnis ipsum sit. Culpa repellendus optio expedita officiis facere fugiat sint voluptatem vel quibusdam voluptate! Soluta suscipit recusandae laboriosam veniam exercitationem.
+					.review-slide
+						.photo
+							img(src="img/photo2.jpg", alt="img")
+						.info
+							p.date 27.10.2017
+							p.name Lorem
+							p.text.huge-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore nulla similique atque nam magnam magni illo cum ipsum ea nihil, dignissimos, placeat laboriosam temporibus consequatur quas quibusdam. Quos animi placeat, qui ut.

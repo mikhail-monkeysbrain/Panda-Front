@@ -6,12 +6,14 @@ mixin top-menu(data)
         a(href="/") ГЛАВНАЯ
       li(class= data.tab == 2 ? 'is-active' : '')
         a(href="/about.html") О КОМПАНИИ
+      li(class= data.tab == 6 ? 'is-active' : '')
+        a(href="/gallery.html") ГАЛЕРЕЯ
       li(class= data.tab == 3 ? 'is-active' : '')
         a(href="/partners.html") ПАРТНЕРАМ
       li(class= data.tab == 4 ? 'is-active' : '')
-        a(href="#") ГДЕ КУПИТЬ
+        a(href="/reviews.html") ОТЗЫВЫ
       li(class= data.tab == 5 ? 'is-active' : '')
-        a(href="#") КОНТАКТЫ
+        a(href="/contacts.html") КОНТАКТЫ
       li
         a(href="#").lk Войти <br> в личный <br> кабинет
       li

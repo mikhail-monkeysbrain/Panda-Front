@@ -197,14 +197,6 @@
     +below(1400px)
       padding 12px
       font-size 18px
-  ::-webkit-input-placeholder
-    color #2e2e2c
-  :-ms-input-placeholder
-    color #2e2e2c
-  ::-moz-placeholder
-    color #2e2e2c
-  :-moz-placeholder
-    color #2e2e2c
   .input-file-label
     position relative
     padding-left 24px
@@ -240,3 +232,205 @@
     +below(1400px)
       padding 12px
       font-size 18px
+
+::-webkit-input-placeholder
+  color #2e2e2c
+:-ms-input-placeholder
+  color #2e2e2c
+::-moz-placeholder
+  color #2e2e2c
+:-moz-placeholder
+  color #2e2e2c
+
+.reviews-page
+  +below(767px)
+    display -webkit-flex
+    display -ms-flex
+    display flex
+    align-items center
+
+
+.reviews-block__carousel
+  margin-top 2vw
+  .owl-item
+    transition: .3s;
+  .owl-item.active
+    +.owl-item
+      margin-top 250px
+      margin-left -15vw
+      opacity 0.5
+      +below(1024px)
+        margin-left 0
+        margin-top 0
+
+.reviews-block
+  padding-left 4.14vw
+  padding-top 4.14vw
+  +below(767px)
+    padding-top 0
+    overflow hidden
+  .main-title
+    margin-bottom 2vw
+  .review-slide
+    display -webkit-flex
+    display -ms-flex
+    display flex
+    justify-content space-between
+    max-width 800px
+    width 100%
+    .photo
+      flex-basis 24%
+      img
+        width 100%
+    .info
+      flex-basis 73%
+      .date
+        color: #080808;
+        font-size: 22px;
+        font-weight: 700;
+        text-transform: uppercase;
+        letter-spacing: 6.1px;
+        margin-bottom 12px
+      .name
+        color: #080808;
+        text-transform: uppercase;
+        font-size: 26px;
+        font-weight: 700;
+        letter-spacing: 1.52px;
+        padding-left 18px
+        border-left: 4px solid #f4902e;
+        margin-bottom 24px
+      .text
+        color: #080808;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        padding-left 22px
+      .more-btn
+        display block
+        color: #080808;
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-top 24px
+        cursor pointer
+
+.morecontent span
+    display none
+
+.contacts-top
+  padding 4.14vw
+  display -webkit-flex
+  display -ms-flex
+  display flex
+  flex-wrap wrap
+  justify-content space-around
+  height 60%
+  +below(1300px)
+    height auto
+  .col1
+    flex-basis 30%
+    +below(1300px)
+      flex-basis 75%
+      margin-bottom 24px
+    +below(767px)
+      flex-basis 100%
+  .col2
+    flex-basis 40%
+    align-self: flex-end;
+    +below(1300px)
+      flex-basis 75%
+      margin-bottom 24px
+    +below(767px)
+      flex-basis 100%
+  .main-title
+    margin-bottom 4vw
+
+.contacts-top__block
+  position relative
+  padding-left 24px
+  &:before
+    content ''
+    position absolute
+    left 0
+    top 0
+    width 4px
+    height 36px
+    background-color: #f4902e;
+  .link
+    display block
+    text-decoration none
+    color: #080808;
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 3.1px;
+  p
+    color: #080808;
+    font-size: 23px;
+    font-weight: 400;
+    text-transform: uppercase;
+    &.bold
+      font-weight 600
+
+.contacts-bottom
+  height 39%
+  +below(1300px)
+    height auto
+
+#contacts-map
+  width 100%
+  height 100%
+  iframe
+    +below(1300px)
+      min-height 400px
+
+.contacts-top__form
+  .title
+    color: #080808;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom 24px
+    letter-spacing: 4.1px;
+  .input-text
+    background: transparent;
+    border: 2px solid #2e2e2c;
+    width 100%
+    margin-bottom 12px
+    color #2e2e2c
+    padding 14px
+    font-size: 24px;
+    max-width 340px
+    width 100%
+    +below(1400px)
+      padding 12px
+      font-size 18px
+  .input-submit
+    display block
+    width 100%
+    text-align center
+    color: #fefff8;
+    font-size: 24px;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding 14px
+    background #000
+    border: none;
+    cursor pointer
+    max-width 340px
+    width 100%
+    +below(1400px)
+      padding 12px
+      font-size 18px
+
+.hidden-text
+  display none
+  p
+    color: #080808;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom 24px
