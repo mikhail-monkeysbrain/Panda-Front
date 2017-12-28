@@ -631,3 +631,82 @@
   text-transform: uppercase;
   margin-bottom: 24px;
 }
+.calculator-page {
+  padding: 4.14vw;
+}
+.calculator-top-stages {
+  margin-top: 3vw;
+}
+.calculator-top-stages .step {
+  opacity: 0.5;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 64px;
+}
+.calculator-top-stages .step:first-child {
+  margin-left: 0;
+}
+.calculator-top-stages .step.active {
+  opacity: 1;
+}
+.calculator-top-stages .step >div:last-child {
+  max-width: 130px;
+  width: 100%;
+  background-color: #f4902e;
+  height: 5px;
+  margin-top: 4px;
+}
+.calculator-top-stages .num,
+.calculator-top-stages .text {
+  display: inline-block;
+  vertical-align: top;
+}
+.calculator-top-stages .num {
+  padding-top: 25px;
+}
+.calculator-top-stages .text {
+  color: #080808;
+  font-size: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-left: 8px;
+}
+.calculator-main-block {
+  margin-top: 3vw;
+}
+.calculator-main-block__title {
+  position: relative;
+  color: #080808;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6.1px;
+}
+.calculator-main-block__title:before {
+  content: '';
+  display: inline-block;
+  background-image: url("../img/miniquot.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  width: 7px;
+  height: 29px;
+  vertical-align: sub;
+  margin-right: 28px;
+}
+.calculator-main-block__title:after {
+  content: '';
+  display: inline-block;
+  background-image: url("../img/miniquot.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+  width: 7px;
+  height: 29px;
+  vertical-align: sub;
+  margin-left: 28px;
+}
+.calculator-main-block__title span.bold {
+  font-weight: 700;
+}

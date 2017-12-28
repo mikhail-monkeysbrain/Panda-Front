@@ -434,3 +434,71 @@
     font-weight: 600;
     text-transform: uppercase;
     margin-bottom 24px
+
+.calculator-page
+  padding 4.14vw
+
+.calculator-top-stages
+  margin-top 3vw
+  .step
+    opacity 0.5
+    display inline-block
+    vertical-align top
+    margin-left 64px
+    &:first-child
+      margin-left 0
+    &.active
+      opacity 1
+    >div
+      &:last-child
+        max-width 130px
+        width 100%
+        background-color: #f4902e;
+        height 5px
+        margin-top 4px
+  .num
+  .text
+    display inline-block
+    vertical-align top
+  .num
+    padding-top 25px
+  .text
+    color: #080808;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-left 8px
+
+.calculator-main-block
+  margin-top 3vw
+
+.calculator-main-block__title
+  position relative
+  color: #080808;
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 6.1px;
+  &:before
+    content ''
+    display inline-block
+    background-image: url(../img/miniquot.png)
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width 7px
+    height 29px
+    vertical-align sub
+    margin-right 28px
+  &:after
+    content ''
+    display inline-block
+    background-image: url(../img/miniquot.png)
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    transform: rotate(180deg);
+    width 7px
+    height 29px
+    vertical-align sub
+    margin-left 28px
+  span.bold
+    font-weight 700

@@ -1,0 +1,36 @@
+include blocks/top-menu
+
+extends blocks/layout.jade
+
+block head
+	- var pageTitle = 'Каталог';
+
+block content
+	include blocks/side-menu
+	.right-side
+		+top-menu
+		.hamburger
+					span
+					span
+					span
+		.calculator-page.scroll-block
+			.main-title.bold конструктор мягкой мебели
+			.calculator-top-stages
+				.step.active
+					div
+						.num
+							img(src="img/num1.png", alt="img")
+						.text выбор <br> параметров
+					div
+				.step
+					div
+						.num
+							img(src="img/num2.png", alt="img")
+						.text оформление <br> заказа
+					div
+			.calculator-main-block
+				.calculator-main-block__title
+					span.bold модель   
+					span феникс
+				.calculator-main-block__img
+					img(src="img/calc1.jpg", alt="img")
